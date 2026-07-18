@@ -85,6 +85,4 @@ LinkedIn: https://www.linkedin.com/in/jairo-andrade-642724269
 
 GitHub: https://github.com/Jairocpdev
 
-Deploy: 
-
-aahttps://taskflow-pro-orpin.vercel.app/
+Deploy: https://taskflow-pro-orpin.vercel.app
