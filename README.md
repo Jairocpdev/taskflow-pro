@@ -2,14 +2,6 @@
 
 > Um gerenciador moderno de tarefas desenvolvido com **HTML5, CSS3 e JavaScript**, focado em produtividade, organização e uma experiência de usuário elegante.
 
-![Status](https://img.shields.io/badge/status-Em%20Desenvolvimento-blue)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![License](https://img.shields.io/badge/license-MIT-green)
-
----
-
 ## 📖 Sobre o projeto
 
 O **TaskFlow Pro** é uma aplicação web para gerenciamento de tarefas criada com foco em um código limpo, interface moderna e organização em módulos.
