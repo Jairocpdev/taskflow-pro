@@ -42,43 +42,6 @@ Este projeto foi desenvolvido para demonstrar conhecimentos em:
 - Font Awesome
 - Google Fonts (Inter)
 
-
-
-## 📂 Estrutura do projeto
-
-TaskFlow-Pro
-│
-├── assets
-│   ├── favicon.ico
-│   ├── logo.png
-│   ├── TASKFLOW 01.png
-│   └── TASKFLOW 02.png
-|   └── TASKFLOW 03.png
-│
-├── css
-│   ├── dark.css
-│   ├── forms.css
-│   ├── header.css
-│   ├── layout.css
-│   ├── reset.css
-│   ├── responsive.css
-│   ├── sidebar.css
-│   ├── styles.css
-│   ├── tasks.css
-│   └── variables.css
-│
-├── javascript
-│   ├── app.js
-│   ├── storage.js
-│   ├── tasks.js
-│   ├── theme.js
-│   └── ui.js
-│
-├── index.html
-├── LICENSE
-├── README.md
-└── .gitignore
-
 ## 👨‍💻 Autor: **Jairo Andrade**
 
 LinkedIn: https://www.linkedin.com/in/jairo-andrade-642724269
