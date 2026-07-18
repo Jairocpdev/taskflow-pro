@@ -1,0 +1,143 @@
+.sidebar {
+    background: var(--surface);
+    border-radius: var(--radius);
+    padding: 28px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    height: fit-content;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.stat-card {
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px;
+    transition: var(--transition);
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(79,70,229,.10);
+}
+
+.stat-card span {
+    display: block;
+    color: var(--text-light);
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.stat-card h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.search-box {
+
+    position: relative;
+}
+
+.search-box i {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-light);
+}
+
+.search-box input {
+    width: 100%;
+    height: 48px;
+    padding-left: 46px;
+    padding-right: 16px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    outline: none;
+    background: var(--surface);
+    color: var(--text);
+    transition: var(--transition);
+}
+
+.search-box input:focus {
+    border-color: var(--primary);
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filters h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.filter {
+    width: 100%;
+    border-radius: 12px;
+    padding: 14px 16px;
+    text-align: left;
+    background: var(--background);
+    color: var(--text);
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.filter:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateX(4px);
+}
+
+.filter.active {
+    background: var(--primary);
+    color: white;
+}
+
+.new-task-btn {
+    width: 100%;
+    height: 52px;
+    border: none;
+    border-radius: 14px;
+
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-dark)
+    );
+
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: var(--transition);
+}
+
+.new-task-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(79,70,229,.25);
+}
+
+.new-task-btn:active {
+    transform: scale(.98);
+}

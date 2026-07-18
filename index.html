@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow Pro</title>
+
+    <meta name="description" content="Gerenciador moderno de tarefas desenvolvido com HTML, CSS e JavaScript.">
+
+    <link rel="icon" href="assets/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="logo">
+
+            <img src="assets/logo.png" alt="TaskFlow Pro">
+
+            <div>
+
+                <h2>TaskFlow Pro</h2>
+
+                <span>Organize seu dia com eficiência</span>
+
+            </div>
+
+        </div>
+
+        <div class="header-right">
+
+            <div class="date">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                <span id="currentDate"></span>
+
+            </div>
+
+            <button id="themeButton" class="theme-btn" aria-label="Alternar tema" title="Alternar tema">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- CONTEÚDO -->
+
+    <main class="container">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <h2>Painel</h2>
+
+            <div class="stats">
+
+                <div class="stat-card">
+
+                    <span>Total</span>
+
+                    <h3 id="totalTasks">0</h3>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <span>Pendentes</span>
+
+                    <h3 id="pendingTasks">0</h3>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <span>Concluídas</span>
+
+                    <h3 id="completedTasks">0</h3>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <span>Atrasadas</span>
+
+                    <h3 id="lateTasks">0</h3>
+
+                </div>
+
+            </div>
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input id="searchInput" type="text" placeholder="Pesquisar tarefa...">
+
+            </div>
+
+            <div class="filters">
+
+                <h3>Filtros</h3>
+
+                <button class="filter active" data-filter="all">
+                    Todas
+                </button>
+
+                <button class="filter" data-filter="pending">
+                    Pendentes
+                </button>
+
+                <button class="filter" data-filter="completed">
+                    Concluídas
+                </button>
+
+                <button class="filter" data-filter="high">
+                    Alta prioridade
+                </button>
+
+            </div>
+
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+
+        <section class="content">
+
+            <!-- FORMULÁRIO -->
+
+            <div class="card">
+
+                <h2>
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Nova tarefa
+
+                </h2>
+
+                <form id="taskForm">
+
+                    <div class="form-group">
+
+                        <label for="taskTitle">
+
+                            Título
+
+                        </label>
+
+                        <input id="taskTitle" type="text" placeholder="Ex.: Finalizar projeto" required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="taskDescription">
+
+                            Descrição
+
+                        </label>
+
+                        <textarea id="taskDescription" rows="4" placeholder="Descreva sua tarefa..."></textarea>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="taskPriority">
+
+                                Prioridade
+
+                            </label>
+
+                            <select id="taskPriority">
+
+                                <option value="Baixa">Baixa</option>
+
+                                <option value="Média">Média</option>
+
+                                <option value="Alta">Alta</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="taskDate">
+
+                                Prazo
+
+                            </label>
+
+                            <input id="taskDate" type="date">
+
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+
+                        <i class="fa-solid fa-floppy-disk"></i>
+
+                        Salvar tarefa
+
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- LISTA -->
+
+            <div class="card">
+
+                <h2>
+
+                    <i class="fa-solid fa-list-check"></i>
+
+                    Minhas tarefas
+
+                </h2>
+
+                <div id="taskList">
+
+                    <p class="empty">
+
+                        Nenhuma tarefa cadastrada.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="javascript/storage.js"></script>
+    <script src="javascript/theme.js"></script>
+    <script src="javascript/ui.js"></script>
+    <script src="javascript/tasks.js"></script>
+    <script src="javascript/app.js"></script>
+
+</body>
+
+</html>

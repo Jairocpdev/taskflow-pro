@@ -1,0 +1,135 @@
+#taskList{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.task{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-left:6px solid var(--primary);
+    border-radius:16px;
+    padding:22px;
+    transition:var(--transition);
+    animation:fadeIn .35s ease;
+}
+
+.task:hover{
+    transform:translateY(-3px);
+    box-shadow:0 14px 28px rgba(79,70,229,.12);
+}
+
+.task h3{
+    font-size:20px;
+    margin-bottom:10px;
+    color:var(--text);
+}
+
+.task p{
+    color:var(--text-light);
+    line-height:1.6;
+    margin-bottom:18px;
+}
+
+.task-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.priority{
+    padding:8px 14px;
+    border-radius:999px;
+    color:#fff;
+    font-size:13px;
+    font-weight:600;
+}
+
+.priority-baixa{
+    background:var(--success);
+}
+
+.priority-média{
+    background:var(--warning);
+}
+
+.priority-alta{
+    background:var(--danger);
+}
+
+.task-actions{
+    display:flex;
+    gap:10px;
+}
+
+.task-actions button{
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:12px;
+    background:var(--background);
+    color:var(--text);
+    cursor:pointer;
+    transition:var(--transition);
+}
+
+.task-actions button:hover{
+    transform:translateY(-2px);
+}
+
+.task-actions button:nth-child(1):hover{
+    background:var(--success);
+    color:white;
+}
+
+.task-actions button:nth-child(2):hover{
+    background:var(--warning);
+    color:white;
+}
+
+.task-actions button:nth-child(3):hover{
+    background:var(--danger);
+    color:white;
+}
+
+.task.completed{
+    opacity:.75;
+    border-left-color:var(--success);
+}
+
+.task.completed h3{
+    text-decoration:line-through;
+}
+
+.task.completed p{
+    text-decoration:line-through;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(12px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.task-info{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.task-date{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    color:var(--text-light);
+    font-size:14px;
+}
