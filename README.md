@@ -1,4 +1,4 @@
-# 🚀 TaskFlow Pro
+# 🚀 TaskFlow Pro 
 
 > Um gerenciador moderno de tarefas desenvolvido com **HTML5, CSS3 e JavaScript**, focado em produtividade, organização e uma experiência de usuário elegante.
 
@@ -20,7 +20,7 @@ Este projeto foi desenvolvido para demonstrar conhecimentos em:
 
 ---
 
-## ✨ Funcionalidades
+## ✨ Funcionalidades 
 
 - ✅ Criar tarefas
 - ✅ Editar tarefas
@@ -34,7 +34,7 @@ Este projeto foi desenvolvido para demonstrar conhecimentos em:
 
 ---
 
-## 🛠️ Tecnologias
+## 🛠️ Tecnologias 
 
 - HTML5
 - CSS3
